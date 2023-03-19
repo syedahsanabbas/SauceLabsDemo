@@ -4,9 +4,12 @@
 
 Feature: Login Functionality
 
-  Scenario: Verify that user should login successfully with valid credentials
+  Scenario Outline: Verify that user should login successfully with valid credentials
     Given User is navigate to Login Page
-    When User enters valid username and password
+    When User enters valid <username> and <password>
     And Clicks on Login button
     Then User is login successfully
     
+    Examples:
+    | username  | password  | 
+		| standard_user | secret_sauce |
