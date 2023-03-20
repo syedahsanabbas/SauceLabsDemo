@@ -35,6 +35,10 @@ public class LoginPage {
 	@CacheLookup
 	WebElement btn_login;
 	
+	@FindBy(id = "error-message-container")
+	@CacheLookup
+	public WebElement Message_Text;
+	
 	
 	// Identify Action on All Web Elements
 	
