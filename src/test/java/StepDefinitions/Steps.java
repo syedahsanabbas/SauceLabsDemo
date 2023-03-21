@@ -52,8 +52,8 @@ public class Steps {
 		Thread.sleep(3000);
 	}
 
-	@Then("User is login successfully")
-	public void user_is_login_successfully() throws InterruptedException {
+	@Then("User should Login successfully")
+	public void user_should_login_successfully() throws InterruptedException {
 				
 		String currenturl = driver.getCurrentUrl();
 		System.out.print(currenturl);
